@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAVEN Studio</title>
+
+       <link rel="stylesheet" href="project3.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="top-banner">
+        <h1><i class="fa-solid fa-camera-retro"></i> HAVEN Studio</h1>
+        <p>Your space to capture and create</p>
+    </header>
+
+        <section class="category-section">
+        <h2>Browse by Year</h2>
+
+        <div class="category-container">
+
+            <div class="category-card" onclick="filterCategory('first')">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>1st Year</h3>
+            </div>
+
+            <div class="category-card" onclick="filterCategory('second')">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>2nd Year</h3>
+            </div>
+
+            <div class="category-card" onclick="filterCategory('third')">
+                <i class="fa-solid fa-camera"></i>
+                <h3>3rd Year</h3>
+            </div>
+
+            <div class="category-card" onclick="filterCategory('fourth')">
+                <i class="fa-solid fa-star"></i>
+                <h3>4th Year</h3>
+            </div>
+        </div>
+    </section>
+
+        <section class="upload-section">
+        <h2>Upload Your Photo</h2>
+        <input type="file" id="photoUpload" accept="image/*" />
+        
+        <select id="yearSelect">
+            <option value="first">1st Year</option>
+            <option value="second">2nd Year</option>
+            <option value="third">3rd Year</option>
+            <option value="fourth">4th Year</option>
+        </select>
+
+        <button onclick="uploadPhoto()">Upload</button>
+    </section>
+
+    
+    <section class="gallery-section">
+        <h2>Explore Creativity</h2>
+        <div id="gallery" class="gallery"></div>
+    </section>
+
+        <script src="project3.js"></script>
+
+</body>
+</html>

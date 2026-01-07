@@ -1,0 +1,136 @@
+/* COLOR PALETTE
+Navy Blue: #0b1c2d
+Ivory White: #f9f9f6
+Muted Gold: #c9a24d
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0b1c2d;
+  color: #f9f9f6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0b1c2d;
+  border-bottom: 1px solid #c9a24d;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c9a24d;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f9f9f6;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: #c9a24d;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.home h1 {
+  font-size: 2.8rem;
+  color: #c9a24d;
+}
+
+.home p {
+  margin-top: 10px;
+  color: #dcdcdc;
+}
+
+/* SECTIONS */
+section {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* YEARS */
+.year-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.year {
+  background-color: #f9f9f6;
+  color: #0b1c2d;
+  padding: 20px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 4px solid #c9a24d;
+}
+
+/* DOMAINS */
+.domain-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.domain {
+  background-color: #f9f9f6;
+  color: #0b1c2d;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  border-left: 4px solid #c9a24d;
+  transition: transform 0.3s;
+}
+
+.domain:hover {
+  transform: translateY(-5px);
+}
+
+/* INFO SECTIONS */
+.info {
+  background-color: #f9f9f6;
+  color: #0b1c2d;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.info h2 {
+  margin-bottom: 15px;
+  color: #0b1c2d;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #dcdcdc;
+  border-top: 1px solid #c9a24d;
+}
